@@ -80,6 +80,7 @@ public class GameEngineTest {
         engine.setTarget(50);
         engine.makeGuess(-1);
         assertEquals(0, engine.getAttempts());
+    }
 
     @Test
     public void testHintVeryClose() {
@@ -148,6 +149,6 @@ public class GameEngineTest {
             engine.makeGuess(60);
         }
         GuessResult result = engine.makeGuess(55);
-        assertFalse(result.getHint().isEmpty());
+        assertTrue(result.getMessage().contains("HINT"));
     }
 }
