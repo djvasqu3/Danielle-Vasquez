@@ -34,3 +34,47 @@ The hotfix branch focuses on fixing randomInt within main.
 
 \- hotfix: Fixes a bug involving the random integer used in main
 
+
+
+\## Learning Summary
+
+
+
+\### Differences
+
+
+
+\- Merge: Merges branches together while keeping the branch version that was merged
+
+\- Rebase: Cleans up branch history by showing commit history next to each other but is prone to conflicts
+
+\- Squash: Merges multiple commits into one commit
+
+\- Cherry-pick: Mostly used for hotfixes to use one commit in another branch
+
+
+
+\### Observations
+
+
+
+\- feature1 was merged with dev and then deleted
+
+\- feature2 was merged with dev after conflicts were resolved
+
+\- feature3 was merged with dev after squashing multiple commits into one commit
+
+
+
+\### Use
+
+
+
+\- Merge: Used in a real project to complete work safely while keeping branch history intact
+
+\- Rebase: Used in a real project to clean up branches to create a more linear and readable history
+
+\- Squash: Used in a real project to clean up commits for a better, more readable summary
+
+\- Cherry-pick: Used in a real project to apply hotfixes without merging other work
+
